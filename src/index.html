@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Pencatatan</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+</head>
+<body>
+    <app-bar></app-bar> 
+
+    <main>
+        <h1>Tambahkan Catatan Anda!</h1>
+        <note-form></note-form> 
+        <h1>Daftar Catatan</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari catatan..." />
+            <button id="search-btn" onclick="searchNotes()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <section id="notes-container">
+            <div id="notes-list" class="grid-container"></div>
+        </section>
+    </main>
+
+    <script src="components/AppBar.js"></script>
+    <script src="components/NoteForm.js"></script>
+    <script src="components/NoteItem.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
+
